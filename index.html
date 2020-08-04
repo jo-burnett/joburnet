@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <html>
-        <head>
-                <title>hi!</title>
+    <head>
+        <title>hi!</title>
 
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-                <!--Import w3.css-->
-                <link rel="stylesheet" href="biopage/web/hack.css"> <!--Import hack font from files-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+        <!-- Import W3.CSS -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-                <style>
+        <!-- Import Hack -->
+        <link rel="stylesheet" href="biopage/web/hack.css"> <!--Import hack font from files-->
+            
+        <style>
+             
+         @keyframes colorchange {
+             0%   {background: #0b0b0b;}
+             50%  {background: #2b2b2b}
+             100% {background: #0b0b0b;}
+         }
+             
+         /* Chrome & Safari*/
+         @-webkit-keyframes colorchange {
+             0%   {background: #0b0b0b;}
+             50%  {background: #2b2b2b;}
+             100% {background: #0b0b0b;}
+         }
 
-                @keyframes colorchange {
-                      0%   {background: #0b0b0b;}
-                      50%  {background: #2b2b2b}
-                      100% {background: #0b0b0b;}
-                }
+         body {
+             animation: colorchange 30s infinite;
+             -webkit-animation: colorchange 30s infinite;
+         }
+         
+         body,h1 {font-family: "Hack", monospace}
+         
+         body, html {height: 100%}
+         .bgimg {
+             min-height: 100%;
+             background-position: center;
+             background-size: cover;
+         }
+        </style>
+    </head>
 
-                /* Chrome & Safari*/
-                @-webkit-keyframes colorchange
-                {
-                  0%   {background: #0b0b0b;}
-                  50%  {background: #2b2b2b;}
-                  100% {background: #0b0b0b;}
-                }
+    <body>
+        <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
 
-                body {
-                        animation: colorchange 30s infinite;
-                        -webkit-animation: colorchange 30s infinite;
-                }
+            <!-- Middle text -->
+            <div class="w3-display-middle">
+                <h1 class="w3-jumbo w3-animate-top w3-center">hi!</h1>
+                <hr class="w3-border-white" style="margin:auto;width:70%">
+                <p class="w3-large w3-center">this is my generic landing page</p>
+                <p class="w3-center">hope you like it</p>
+                <p class="w3-small w3-center">me (at) jobur.net</p>
+                <p class="w3-tiny w3-center">its formatted like this to<br>stop me getting email spam</p>
+            </div>
 
-                body,h1 {font-family: "Hack", monospace}
-
-                body, html {height: 100%}
-                .bgimg {
-                        min-height: 100%;
-                        background-position: center;
-                        background-size: cover;
-                }
-                </style>
-
-
-
-        </head>
-
-        <body>
-                <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-                        <div class="w3-display-middle">
-                                <h1 class="w3-jumbo w3-animate-top w3-center">hi!</h1>
-                                <hr class="w3-border-white" style="margin:auto;width:70%">
-                                <p class="w3-large w3-center">this is my generic landing page</p>
-                                <p class="w3-center">hope you like it</p>
-                                <p class="w3-small w3-center">me (at) jobur.net</p>
-                                <p class="w3-tiny w3-center">its formatted like this to<br>stop me getting email spam</p>
-                        </div>
-                </div>
-        </body>
+        </div>
+    </body>
 </html>
